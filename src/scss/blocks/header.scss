@@ -1,0 +1,31 @@
+.header {
+  background-color: var(--main-color);
+  height: 150px;
+  padding: 20px 40px;
+  color: #fff;
+  .logo {
+    text-decoration: none;
+    color: #fff;
+    font-size: 50px;
+    span {
+      position: relative;
+      display: inline-block;
+    }
+    span:first-child {
+      font-size: 40px;
+      bottom: 5px;
+    }
+    span:nth-child(2) {
+      bottom: 3px;
+    }
+    span:nth-child(3) {
+      font-size: 60px;
+      bottom: 2px;
+    }
+  }
+  .button {
+    position: absolute;
+    right: 40px;
+    top: 20px;
+  }
+}

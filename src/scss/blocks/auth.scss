@@ -1,0 +1,21 @@
+.auth {
+  form {
+    max-width: 600px;
+    margin: 0 auto;
+    input {
+      display: block;
+      width: 100%;
+      height: 50px;
+      margin-bottom: 10px;
+      border: 2px solid var(--secondary-color);
+      padding: 10px 15px;
+      font-size: 18px;
+    }
+    .button {
+      display: block;
+      width: 100%;
+      height: 50px;
+      text-align: left;
+    }
+  }
+}
