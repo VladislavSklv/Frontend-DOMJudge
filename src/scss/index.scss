@@ -4,6 +4,9 @@
   font-weight: 400;
   --main-color: #ff6a00;
   --secondary-color: #7e7e7e;
+  --secondary-color-active: #a3a2a2;
+  --correct-color: #008000;
+  --error-color: #b82909;
 }
 
 * {
@@ -26,9 +29,14 @@
   cursor: pointer;
   font-size: 25px;
   text-decoration: none;
+  transition: background-color 0.2s ease-out;
+  &:hover {
+    background-color: var(--secondary-color-active);
+  }
 }
 
 @import "./blocks/header.scss";
 @import "./blocks/tournaments.scss";
 @import "./blocks/auth.scss";
 @import "./blocks/start.scss";
+@import "./blocks/error.scss";

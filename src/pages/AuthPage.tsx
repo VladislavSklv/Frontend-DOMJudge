@@ -9,8 +9,9 @@ const AuthPage: React.FC = () => {
   const auth = useContext(AuthContext);
 
   const checkLogin = (e: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
+    e.preventDefault();
     if (email === "admin" && password === "admin" && auth !== null) {
-      navigate("/start");
+      navigate("/soon");
       auth.setIsAuth(true);
       auth.setIsHidden(false);
     } else {

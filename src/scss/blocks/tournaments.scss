@@ -16,3 +16,117 @@
     color: var(--secondary-color);
   }
 }
+.soon {
+  &__title {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 28px;
+  }
+  &__date {
+    display: block;
+  }
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  border: 3px solid var(--secondary-color);
+  padding: 10px 10px;
+  overflow-x: auto;
+  height: 60px;
+  margin-bottom: 20px;
+  &::-webkit-scrollbar {
+    height: 0;
+    width: 0;
+  }
+  span {
+    display: inline-block;
+    font-size: 24px;
+    color: var(--secondary-color);
+    flex-shrink: 0;
+  }
+  &__item {
+    display: inline-block;
+    font-size: 24px;
+    margin-left: 15px;
+    height: 100%;
+    width: 60px;
+    background-color: var(--secondary-color);
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+    flex-shrink: 0;
+    &_active {
+      background-color: var(--main-color);
+    }
+    &_correct {
+      background-color: var(--correct-color);
+    }
+    &_error {
+      background-color: var(--error-color);
+    }
+  }
+}
+
+.task {
+  display: flex;
+  justify-content: space-between;
+  &__info {
+    width: 20%;
+  }
+  &__title {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  &__text {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    background-color: var(--secondary-color);
+    text-align: center;
+    padding: 15px;
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+  &__message {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: 600;
+    border-width: 3px;
+    border-style: solid;
+    &_error {
+      border-color: var(--error-color);
+      color: var(--error-color);
+    }
+    &_correct {
+      border-color: var(--correct-color);
+      color: var(--correct-color);
+    }
+  }
+  form {
+    width: 75%;
+    margin-left: 10px;
+  }
+  textarea {
+    display: block;
+    width: 100%;
+    height: 300px;
+    border: 3px solid var(--secondary-color);
+    padding: 5px;
+    margin-bottom: 10px;
+  }
+  .select-wrapper {
+    display: flex;
+  }
+  select {
+    width: 100%;
+    margin-right: 20px;
+    border: 3px solid var(--secondary-color);
+    color: var(--secondary-color);
+    font-size: 18px;
+  }
+}

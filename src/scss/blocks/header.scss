@@ -7,25 +7,33 @@
     text-decoration: none;
     color: #fff;
     font-size: 50px;
+    line-height: 2;
+    user-select: none;
     span {
       position: relative;
       display: inline-block;
+      line-height: 1;
     }
     span:first-child {
       font-size: 40px;
-      bottom: 5px;
+      bottom: 6px;
     }
     span:nth-child(2) {
       bottom: 3px;
     }
     span:nth-child(3) {
       font-size: 60px;
-      bottom: 2px;
+      bottom: 1px;
     }
   }
   .button {
     position: absolute;
     right: 40px;
     top: 20px;
+  }
+  .user {
+    text-align: right;
+    font-size: 18px;
+    line-height: 1;
   }
 }

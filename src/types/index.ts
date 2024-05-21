@@ -1,4 +1,4 @@
-interface ITournament {
+interface ITournamentPre {
   title: string;
   date: string;
 }

@@ -1,0 +1,11 @@
+.error-page {
+  text-align: center;
+  h1 {
+    color: var(--error-color);
+    font-size: 50px;
+  }
+  .button {
+    padding: 10px 20px;
+    margin-top: 20px;
+  }
+}

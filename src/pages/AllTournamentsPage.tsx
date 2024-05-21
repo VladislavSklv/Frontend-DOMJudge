@@ -1,9 +1,8 @@
-import React, { useState } from "react";
-import Layout from "../components/Layout";
+import { useState } from "react";
 import Tournament from "../components/Tournament";
 
 function AllTournamentsPage() {
-  const [tournaments, setTournaments] = useState<ITournament[]>([
+  const [tournaments, setTournaments] = useState<ITournamentPre[]>([
     {
       title: "Чемпионат 1 по спортивному программированию",
       date: "Начало 19.03.2024 в 08:00",

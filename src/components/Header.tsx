@@ -6,6 +6,9 @@ const Header: React.FC = () => {
   const auth = useContext(AuthContext);
   const navigate = useNavigate();
 
+  const username = "Админ Админович Админов";
+  const userGroup = "ИСТ-001";
+
   return (
     <header className="header">
       {auth != null && !auth.isAuth && !auth.isHidden && (
@@ -18,6 +21,11 @@ const Header: React.FC = () => {
         <span>)</span>
         <span>)</span>
       </a>
+      {auth != null && auth.isAuth && (
+        <p className="user">
+          {username} {userGroup}
+        </p>
+      )}
     </header>
   );
 };
